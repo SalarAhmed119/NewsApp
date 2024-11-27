@@ -6,8 +6,117 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: purple;
+  padding: 0px 40px;
+  color: #fff;
+  font-family: 'calibri';
+}
+nav h1{
+  font-size: 30px;
+}
+nav ul a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+nav input{
+  width: 250px;
+  text-decoration: none;
+  padding: 9px;
+  font-size: 18px;
+  border: none;
+}
+
+.searchBar{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+nav button{
+  width: 70px;
+  height: 38px;
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  color: purple;
+  font-size: 16px;
+  cursor: pointer;
+}
+nav ul{
+  display: flex;
+  gap: 11px;
+}
+.categoryBtn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  font-family: 'calibri';
+}
+.categoryBtn button{
+  width: 150px;
+  height: 50px;
+  background-color: rgb(241, 121, 36);
+  color: #fff;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cardContainer{
+  display: flex;
+  justify-content: center;
+  gap: 41px;
+  flex-wrap: wrap;
+}
+.card{
+  width: 320px;
+  box-shadow: 0px 4px 4px 4px rgb(255, 255, 255);
+  background-color: #fff;
+  border-radius: 3px;
+  margin-top: 20px;
+  border: 1px solid rgb(236, 236, 236);
+}
+.cardContent{
+  padding: 10px;
+}
+.card img{
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.card .title{
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -7px;
+  text-decoration: none;
+  color: orangered;
+}
+.card .title:hover{
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+.description{
+  color: #800080;
+}
+.cardContent button{
+  width: 100px;
+  height: 35px;
+  border: none;
+  background-color: orangered;
+  color: #fff;
 }
